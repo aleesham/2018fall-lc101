@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang=en><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
+
+<!-- #ToDo: Change Title for the presentation -->
+<title>Validation</title>
+
+</head>
+
+<!-- #ToDo: Change 16:9 to 4:3 or vice versa, according to the current projector / screen -->
+<body onload="var slideshow = remark.create({ratio: '16:9', navigation: {scroll: true, touch: true, click: false}, countIncrementalSlides: false, highlightLanguage: 'bash', highlightStyle: 'tomorrow-night-blue'});">
+
+<!-- #ToDo: Write your slides in MarkDown here -->
+<textarea id="source">
+
+class: center, middle
+
+<h1 style="color:rgb(91,147,206)">LC101: Unit 2</h1>
+
+## Validation
+
+---
+
+## Why Validate Form Data?
+
+- Ensure that user-submitted data "makes sense"
+
+--
+
+- Prevent users from submitting data that might break our application
+
+--
+
+- Provide user-friendly feedback when data doesn't meet our criteria
+
+---
+
+## Client-side Validation
+
+### How?
+
+- HTML input element attributes
+- JavaScript
+
+--
+
+**Advantages:** Data can be validated in "real time" without having to make a request to the server. This is much more user-friendly.
+
+--
+
+**Disadvangates:** Client-side validation can be easily by-passed by disabling JS or by submitting a request without using the form you've written.
+
+---
+
+## Server-side Validation
+
+### How?
+
+- Within request handlers
+- Within model classes
+
+--
+
+**Advantages:** Can not be bypassed.
+
+--
+
+**Disadvangates:** Is not user-friendly since a request has to be submitted in order to have data validated.
+
+---
+
+## Where to Validate?
+
+**Question:** If both client-side and server-side validation have downsides, then what is the best approach to validation?
+
+--
+
+**Answer:** Validate everywhere! Each of these validation locations have differing strengths and weaknesses, and in general, each should be used in a multi-faceted approach to data validation.
+
+When any one part of your application is receiving data from a user, you should **never** assume that it will be valid and safe, even if you have validation measures in place elsewhere.
+
+---
+
+
+
+
+</textarea><script type="text/javascript" src="../js/remark-latest.min.js"></script></body></html>
