@@ -95,13 +95,16 @@ body {
 .remark-slide-content ul {
     margin: 0 0 .5em 0; /* Global margin rules for in-slide elements */
 }
-
+.image {
+    display:inline-block;
+    width: 42.5%;
+    padding: 10px;
+}
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
