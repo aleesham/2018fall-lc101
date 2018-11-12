@@ -95,7 +95,7 @@ body {
 .remark-slide-content ul {
     margin: 0 0 .5em 0; /* Global margin rules for in-slide elements */
 }
-.image {
+#seating-chart {
     display:inline-block;
     width: 42.5%;
     padding: 10px;
