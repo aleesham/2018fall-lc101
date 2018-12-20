@@ -28,3 +28,6 @@ Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
 - ### Day 11
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit1/class11/index.html)
 
+- ### Day 11
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit1/class12/index.html)
+
