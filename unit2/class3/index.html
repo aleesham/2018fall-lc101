@@ -11,14 +11,6 @@
 <!-- #ToDo: Write your slides in MarkDown here -->
 <textarea id="source">
 
-class: center
-
-<div id="seating-chart" style="width: 100%;">
-    <img alt="Group Map" src="../images/group-map2.png" />
-</div>
-
----
-
 class: center, middle
 
 # Unit 2
@@ -29,6 +21,17 @@ class: center, middle
 class: center, middle
 
 # [Class 3](https://education.launchcode.org/web-fundamentals/class-prep/3/) Lecture
+
+---
+
+### General Reminders
+
+- You MUST do the Class Prep
+- Code with the videos
+- HTML-Me-Something due Monday
+    - Read carefully
+    - Follow the instructions to turn it in
+    - If you are done, you can demo to your TA today
 
 ---
 
@@ -45,26 +48,79 @@ class: center, middle
 
 ---
 
-<!-- TODO -->
 ### HTTP
+- Example: GET https://www.google.com responds with the html which displays the homepage
+- Let us check this out using our Dev Tools.
 
 ---
 
-<!-- TODO -->
+### Web App/HTTP(S) Demo
+- Open a web browser
+- Open dev tools and go to the network tab
+- Navigate to https://www.google.com
+    - Click the www.google.com call in your network tab
+    - Click on the headers tabs
+
+---
+
 ### Flask
+- A python framework for making web apps
+- A web app is a program on a server that creates html in respone to user actions
+- What is the difference between static webpages and dynamic webpages? Examples?
 
+---
+
+### What is a Python Framework?
+- Python files already written that we use
+- It does something useful
+- It has rules/conventions
+- It has functions/Classes we can use
+- Check out the docs [here](http://flask.pocoo.org/)
 
 ---
 
-### Graded Exercise: [HTML-Me-Something](https://education.launchcode.org/web-fundamentals/assignments/html-me-something/)
-- Get started on this now
-- Due Monday, January 14
-- Examples:
-    - (Places I've Lived)[https://education.launchcode.org/html-me-something/submissions/chrisbay/index-nocss.html]
-    - (My Favorite Animals)[https://aleesham.github.io/html-me-something/]
-    - (Kurti and the Hursti Boys)[https://ryanadroll.github.io/html-me-something/merch.html]
+### Some Commands from the Tutorial
+- `conda` is a command we "taught" our terminal during the `initials.py` assignment
+- Think of the Miniconda software as a python package installer
+- `conda create -n hello-flask`
+    - Creates a virtual environment
+    - What exactly is a virutal environment?
+    - Used to control dependencies/versions
 
 ---
+
+<div class="med-img">
+    <img alt="virutal environments" src="../images/virtual-env.png" />
+</div>
+
+---
+
+### Some Commands from the Tutorial
+- `source activate hello-flask`
+- `conda install flask` 
+- Why don't we have to:
+    - `conda install math`?
+    - `conda install random`?
+
+---
+
+### Some Commands from the Tutorial
+- What happens when we run `python main.py` (from Class Prep)?
+- What shows up in the terminal?
+- Let's run these commands and do another example...
+
+---
+
+### Demo
+- Create a new project directory in your `lc101` folder 
+- Create a new environment using `conda`
+- Activate your environment
+- Install `flask` in your enviroment
+- Make a web app
+- Run the app
+
+---
+
 
 class: center, middle
 
@@ -74,13 +130,17 @@ class: center, middle
 
 class: center, middle
 
-<!-- TODO -->
 ## Studio Walkthrough
 ### [Flicklist 1](https://education.launchcode.org/web-fundamentals/studios/flicklist/1/)
 
 ---
 
-<!-- TODO -->
 ### Studio Walkthrough
+- Navigate to your `lc101` folder
+- Clone the [flicklis-flask project](https://github.com/LaunchCodeEducation/flicklist-flask
+- Now we have a local copy!
+- Remember, we need to `cd flicklist-flask` to access it.
+- Good luck!
+
 
 </textarea><script type="text/javascript" src="../../js/remark-latest.min.js"></script></body></html>
