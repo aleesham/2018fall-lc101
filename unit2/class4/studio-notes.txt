@@ -37,6 +37,11 @@
         </form>
     """
 
+    NOTE: the for attribute in label maps to the id attribute in input
+    NOTE: the name attribute in input is used in request.form
+
+    WHY DO WE HAVE for, id, name?
+
 6. Edit index to display the add form. 
     edit_header = "<h2>Edit My Watchlist</h2>"
 
@@ -58,3 +63,5 @@
         content = page_header + "<p>" + sentence + "</p>" + page_footer
 
         return content
+
+9. Test changes. Add, commit.
