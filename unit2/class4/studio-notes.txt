@@ -1,0 +1,60 @@
+1. Delete lines 2, 10-25, 27-29
+
+2. `return 'test'` in index.
+
+3. Run app to test.
+
+4. Since we need the general html tags over and over again, let's make some variables to reuse.
+    a. Add `page_header` variable:
+        page_header = """
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>FlickList</title>
+            </head>
+            <body>
+                <h1>FlickList</h1>
+        """
+
+    b. Add `page_footer variable`
+        page_footer = """
+            </body>
+        </html>
+        """
+
+    c. Change index return to `return page_header + page_footer`
+    d. Test our changes
+
+5. Create an add_form since this is the whole point!
+    add_form = """
+        <form action="/add" method="post">
+            <label for="new-movie">
+                I want to add
+                <input type="text" id="new-movie" name="new-movie"/>
+                to my watchlist.
+            </label>
+            <input type="submit" value="Add It"/>
+        </form>
+    """
+
+6. Edit index to display the add form. 
+    edit_header = "<h2>Edit My Watchlist</h2>"
+
+    # build the response string
+    content = page_header + edit_header + add_form + page_footer
+
+    return content
+
+7. Test your changes. What happens when we click add?
+
+8. Add a new route to deal with the POST to /add
+    @app.route("/add", methods=['POST'])
+    def add_movie():
+        new_movie = request.form['new-movie']
+
+        # build response content
+        new_movie_element = "<strong>" + new_movie + "</strong>"
+        sentence = new_movie_element + " has been added to your Watchlist!"
+        content = page_header + "<p>" + sentence + "</p>" + page_footer
+
+        return content

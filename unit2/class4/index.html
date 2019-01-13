@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang=en><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
+
+<!-- #ToDo: Change Title for the presentation -->
+<title>Unit 2: Web Fundamentals</title>
+
+</head>
+
+<!-- #ToDo: Change 16:9 to 4:3 or vice versa, according to the current projector / screen -->
+<body onload="var slideshow = remark.create({ratio: '16:9', navigation: {scroll: true, touch: true, click: false}, countIncrementalSlides: false, highlightLanguage: 'bash', highlightStyle: 'tomorrow-night-blue'});">
+
+<!-- #ToDo: Write your slides in MarkDown here -->
+<textarea id="source">
+
+class: center, middle
+
+# Unit 2
+## Web Fundamentals
+
+---
+
+class: center, middle
+
+# [Class 4](https://education.launchcode.org/web-fundamentals/class-prep/4/) Lecture
+
+---
+
+### General Reminders
+
+- You MUST do the Class Prep
+- Code with the videos
+- HTML-Me-Something due today
+- Web Caesar due January 24
+- Use Slack to communicate (Download the app!)
+
+---
+
+### HTML files versus Flask
+
+- `open index.html` or `start index.html` open a file on your machine. 
+- `python main.py` (given main.py is a Flask app) starts a web app at `localhost:5000`.
+
+
+---
+
+class: center, middle
+
+## Studio Solution
+### [Flicklist 1](https://education.launchcode.org/web-fundamentals/studios/flicklist/1/)
+
+---
+
+### Studio 1: Self-Led Walkthrough
+- `cd lc101/flicklist-flask`
+- If not on `walkthrough1` branch: `git checkout walkthrough1`
+- `source activate hello-flask`
+- `python main.py`
+
+---
+
+### Studio 1: Solution
+- `git checkout studio1`
+- `git pull origin studio1` (Why?)
+- `code .`
+- Complete TODOs (Run the app to watch changes)
+- `git add .`
+- `git commit -m "Your message here"`
+- Why don't we push? 
+- Can we push to our own if we want?
+
+---
+### Topics
+- HTML Forms
+- Forms in Flask
+- GET versus POST Methods
+- Status Codes
+- Form inputs 
+- `str.foramt`
+
+---
+
+### GET Methods
+- Parameters are in the URL (`https://www.google.com/?q=puppies`)
+- Should be used only to fetch documents
+- Should NOT change state of data on server
+
+---
+
+### POST Methods
+- Parameters in the request body
+- Used to update data on the server or in the database
+- Can change state of data on the server
+
+---
+
+### GET Methods: Some Gotchas
+- Can a GET request change data?
+- Can a GET request have a body?
+
+---
+
+class: center, middle
+
+# Q&A
+### Flask, `git`, `str.format`?
+
+---
+
+class: center, middle
+
+## Studio Walkthrough
+### [Flicklist 2](https://education.launchcode.org/web-fundamentals/studios/flicklist/2/)
+
+---
+
+### Studio Walkthrough
+- Our goal is to have a running list of movies watched
+- Eventually we will add a database
+- This allows us to add, delete, change a movie's status to 'watched', etc.
+- Start this journey by completely restructuing the code to have a form to add movies.
+- The goal of this studio is to add a form so we can add movies to a list.
+- Note: We won't actually add anything to a list. Just going through the motions for now. 
+
+---
+
+### Studio Walkthrough
+- `cd lc101/flicklist-flask`
+- `git status` (add and commit if necessary)
+- `git checkout walkthrough2`
+- `code .`
+- Note the answer to the previous studio
+- Restruture the code (code along or just watch)
+- Add and commit when complete (if you code along)
+- Starter code (solution to walkthrough2) available on the `studio2` branch
+
+
+</textarea><script type="text/javascript" src="../../js/remark-latest.min.js"></script></body></html>
