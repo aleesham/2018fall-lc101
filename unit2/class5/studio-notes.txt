@@ -1,0 +1,102 @@
+-----------------------------------------------
+SOLUTION TO STUDIO2
+-----------------------------------------------
+
+TODO1: Add a crossoff form
+    crossoff_form = """
+        <form action="/crossoff" method="post">
+            <label for="crossoff-movie">
+                I want to add
+                <input type="text" id="crossoff-movie" name="crossoff-movie"/>
+                to my watchlist.
+            </label>
+            <input type="submit" value="Cross It Off"/>
+        </form>
+    """
+
+TODO2: Handle the form submission.
+    @app.route('/crossoff', methods = ['POST'])
+    def crossoff():
+        crossed_off_movie = request.form['crossoff-movie']
+        crossoff_element = "<p><strike>{}</strike> has been crossed off your Watchlist!</p>".format(crossed_off_movie)
+        return page_header + content + page_footer
+        
+TODO3: Use a dropdown instead of an input.
+    crossoff_form = """
+        <form action="/crossoff" method="post">
+            <label for="crossoff-movie">
+                I want to add
+                <select id="crossoff-movie" name="crossoff-movie">
+                    <option value="Space Balls">Space Balls</option>
+                    <option value="Star Wars">Star Wars</option>
+                    <option value="Begin Again">Begin Again</option>
+                    <option value="Big Fish">Big Fish</option>
+                    <option value="Identity">Identity</option>
+                </select>
+                to my watchlist.
+            </label>
+            <input type="submit" value="Cross It Off"/>
+        </form>
+    """
+
+
+
+
+
+
+--------------------------------------------
+STUDIO3 WALKTHROUGH
+--------------------------------------------
+
+
+Adding the TODOs:
+
+# TODO: Add a function to get current (pretend) watchlist
+# Hardcode a list of movies
+
+
+# TODO: Dynamically create the crossoff form select options.
+# Use an accumulator pattern to get all the <option></option> tags
+# We want the get_current_watchlist to eventually get a watchlist
+# from a database, so we don't know how many movies will be in the
+# list
+
+# TODO: Add validation to the POST /crossoff endpoint
+# Check if crossed_off_movie is in get_current_watchlist()
+# If yes, do as is.
+# If no, redirect to "/" with a helpfol error as a query parameter
+
+# TODO: Check if there is an error in the query parameters. 
+# If there is, display it.
+
+
+TODO 1:
+    def get_current_watchlist():
+        return ['Space Balls', 'Star Wars', 'Begin Again', 'Big Fish', 'Identity']
+
+TODO 2:
+    options = ""
+    for movie in get_current_watchlist():
+        options += '<option value="{0}">{0}</option>'.format(movie)
+
+    Edit crossoff_form to use options variable using .format(options)
+
+    Why do we have value="{0}"? Why is this useful?
+
+TODO 3:
+    from flask import redirect
+    import cgi
+
+    if crossed_off_movie in get_current_watchlist():
+        ## Do what we have already
+    error_endpoint = "/?error='{}' is not in your Watchlist, so you can't cross it off!".format(crossed_off_movie)
+    error_endpoint_escaped = cgi.escape(error_endpoint)
+    return redirect(error_endpoint_escaped)
+
+TODO 4:
+    error_element = ""
+    error = request.args.get('error', '')
+    if (error):
+        error_element = "<p style='color: red;'>{}</p>".format(error)
+
+    Add error to the content after crossoff_form
