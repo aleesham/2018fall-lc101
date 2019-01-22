@@ -1,0 +1,106 @@
+-----------------------------------------------
+SOLUTION TO STUDIO3
+-----------------------------------------------
+
+TODO 1:
+    new_movie = cgi.escape(new_movie)
+
+
+TODO 2:
+    if new_movie == "":
+        error="Please specify the name of the movie you want to add"
+        return redirect("/?error={}".format(error))
+
+TODO 3:
+    if new_movie in terrible_movies:
+        error="Trust me, you don't want to add '{}' to your Watchlist.".format(new_movie)
+
+        return redirect("/?error={}".format(error))
+
+
+--------------------------------------------
+STUDIO4 WALKTHROUGH
+--------------------------------------------
+
+TODO 1:
+    from flask import Flask, request, redirect, render_template
+
+TODO 2:
+---------------------------
+    templates/base.html
+---------------------------
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>FlickList</title>
+                <style type="text/css">
+                    .error {
+                        color: red;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>
+                    <a href="/">FlickList</a>
+                </h1>
+
+                {% block content %}
+                {% endblock %}
+
+            </body>
+        </html>
+
+
+
+    
+---------------------------
+    templates/edit.html
+---------------------------
+        {% extends "base.html" %}
+
+        {% block content %}
+        <h2>Edit My Watchlist</h2>
+
+        <form action="/add" method="post">
+            <label>
+                I want to add
+                <input type="text" name="new-movie"/>
+                to my watchlist.
+            </label>
+            <input type="submit" value="Add It"/>
+        </form>
+
+        <form action="/crossoff" method="post">
+            <label>
+                I want to cross off
+                <select name="crossed-off-movie">
+                    <!-- need to loop over watchlist to create option elements -->
+                    {% for movie in watchlist: %}
+                        <option value="{{ movie }}">{{ movie }}</option>
+                    {% endfor %}
+                </select>
+                from my watchlist.
+            </label>
+            <input type="submit" value="Cross It Off"/>
+        </form>
+
+        {% if error %}
+        <p class='error'>{{ error }}</p>
+        {% endif %}
+        {% endblock %}
+
+    
+-------------------------------
+    templates/crossoff.html
+-------------------------------
+        {% extends "base.html" %}
+
+        {% block content %}
+        <p><strike>{{ crossed_off_movie }}</strike>  has been crossed off your Watchlist.</p>
+        {% endblock %}
+
+    
+TODO 3:
+    return render_template('edit.html', watchlist=get_current_watchlist(), error=encoded_error and cgi.escape(encoded_error, quote=True))
+    return render_template('crossoff', crossed_off_movie=crossed_off_movie)
+    return "Under construction..."
