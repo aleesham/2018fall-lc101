@@ -1,4 +1,4 @@
-# CodeCamp Slides
+# LC101 Slides
 
 Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
 
@@ -66,14 +66,10 @@ Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
 - ### Day 11
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class11)
 
-<!-- 
-
-- ### Day 12
-    - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class12)
-
 - ### Day 13
-    - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class13)
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/cla
 
-- ### Day 14
-    - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class14)
- -->
+## Unit 3: Fundamentals of Programming
+
+- ### Day 1
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class1)
