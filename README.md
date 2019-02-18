@@ -67,7 +67,7 @@ Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class11)
 
 - ### Day 13
-    - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/cla
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class13)
 
 ## Unit 3: Fundamentals of Programming
 
