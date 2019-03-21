@@ -69,7 +69,7 @@ Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
 - ### Day 13
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class13)
 
-## Unit 3: Fundamentals of Programming
+## Unit 3: Back-End Java
 
 - ### Day 1
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class1)
@@ -89,3 +89,9 @@ Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
 
  - ### Day 6
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class6)   
+
+ - ### Day 7
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class7)   
+
+ <!-- - ### Day 8
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class8)    -->
