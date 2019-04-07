@@ -98,5 +98,18 @@ Lesson slides for LaunchCode's 2018 LC101 Class (O'Fallon).
 
 - ### Day 9
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class9)   
+
 - ### Day 10
-    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class10)   
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class10)    
+
+<!-- - ### Day 11
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class11)      -->
+
+<!-- - ### Day 12
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class12)      -->
+
+<!-- - ### Day 13
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class13)      -->
+
+<!-- - ### Day 14
+    - [Slides](https://aleesham.github.io/2018fall-lc101/unit3/class14)    -->
