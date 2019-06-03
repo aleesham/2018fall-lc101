@@ -137,7 +137,7 @@ body {
 }
 
 .remark-slide-content ol li,
-.remark-slide-content ul li, {
+.remark-slide-content ul li {
   margin-bottom: .5em;
 }
 
@@ -337,8 +337,15 @@ body {
 }
 
 .med-img {
-    zoom: 1.5;
+    width: 15em;
+    margin: auto;
 }
+
+.med2-img {
+    width: 30em;
+    margin: auto;
+}
+
 
 strong {
   color: #f47753;
