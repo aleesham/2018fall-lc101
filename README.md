@@ -22,12 +22,13 @@ Lesson slides for LaunchCode's Spring 2019 LC101 Class (STLCC).
 - ### Day 6
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class6)
 
-<!-- 
 - ### Day 7
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class7)
 
 - ### Day 8
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class8)
+
+<!-- 
 
 - ### Day 9
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class9)
