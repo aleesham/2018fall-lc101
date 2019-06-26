@@ -21,9 +21,12 @@ Lesson slides for LaunchCode's Spring 2019 LC101 Class (STLCC).
 
 - ### Day 6
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class6)
+    - [Solution to Flicklist 4](https://github.com/aleesham/another-flicklist/tree/studio4)
 
 - ### Day 7
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class7)
+    - [Solution to Flicklist 5](https://github.com/aleesham/another-flicklist/tree/studio5)
+    - [Solution to Databases 1](https://github.com/aleesham/2018fall-lc101/tree/gh-pages/unit2/class7/database-1-solutions.md)
 
 - ### Day 8
     - [Slides](https://aleesham.github.io/2018fall-lc101/unit2/class8)
